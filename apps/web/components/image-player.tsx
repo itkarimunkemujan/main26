@@ -21,7 +21,7 @@ export const ImagePlayer: React.FC<ImagePlayerProps> = ({
   const intervalRef = React.useRef<NodeJS.Timeout | null>(null)
 
   const currentImage = React.useMemo(
-    () => images[currentIndex],
+    () => images[currentIndex] ?? "",
     [images, currentIndex]
   )
 
