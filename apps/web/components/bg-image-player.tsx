@@ -15,7 +15,7 @@ export function BgImagePlayer() {
   return (
     <ImagePlayer
       images={IMAGES}
-      interval={700}
+      interval={500}
       renderImage={(src) => (
         <Image src={src} fill className="object-cover" alt="showcase" />
       )}
