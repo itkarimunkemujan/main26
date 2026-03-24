@@ -1,4 +1,5 @@
 import { ComingSoonCountdown } from "@/components/coming-soon-countdown"
+import { BgImagePlayer } from "@/components/bg-image-player"
 import { RiInstagramLine, RiTiktokLine } from "@remixicon/react"
 import type { Metadata } from "next"
 import Image from "next/image"
@@ -65,7 +66,10 @@ export default function Page() {
           </footer>
         </div>*/}
 
-      <div className="center relative flex aspect-video w-full items-center justify-center rounded bg-zinc-200 bg-[url('/images/bg/sasa.png')] bg-cover bg-no-repeat p-3 lg:aspect-auto lg:min-h-[650px] xl:min-h-[800px]">
+      <div className="center relative flex aspect-video w-full items-center justify-center rounded p-3 lg:aspect-auto lg:min-h-[650px] xl:min-h-[800px]">
+        <div className="absolute inset-0 -z-10">
+          <BgImagePlayer />
+        </div>
         <div className="absolute inset-0 bg-black/40" aria-hidden />
         <div>
           <ComingSoonCountdown />
